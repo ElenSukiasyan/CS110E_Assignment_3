@@ -1,8 +1,9 @@
 /*Create a function that takes two numbers as its arguments and returns an
 array that contains all the prime numbers between them inclusively. This
 function must call your function from question 1 to check each number.*/
-const n=3
-const k=20
+const prompt = require('prompt-sync')();
+const n=prompt('number 1: ')
+const k=prompt('number 2: ')
 function array(f,l)
 {
     let array=[]
@@ -20,6 +21,10 @@ function array(f,l)
 }
 function primeOrNot(m)
 {
+    if(m<2)
+    {
+     return false
+    }
     let count=0;
     let i;
     for(i=2; i<=Math.sqrt(m); i++)
@@ -28,7 +33,7 @@ function primeOrNot(m)
         count++;
     }
     if(count===0)
-    return true
-    else return false
+    return(true)
+    else return (false)
 }
 console.log (array(n,k))

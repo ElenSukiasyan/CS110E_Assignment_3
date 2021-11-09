@@ -1,6 +1,7 @@
 /*Create a function that checks if a number is a palindrome by calling the
 functions from question 3*/
-const n=67887
+const prompt = require('prompt-sync')();
+const n=prompt('number: ')
 function reverse(f)
 {
     let m=0;
@@ -15,8 +16,8 @@ function reverse(f)
 }
 function palindrome(k)
 {
-    if(k===reverse(k))
+    if(k==reverse(k))
     return true;
     else return false;
 }
-console.log (`your number is ${palindrome(n)} palindrome`)
+console.log (`is palindrome:  ${palindrome(n)}`)

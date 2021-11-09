@@ -1,6 +1,7 @@
 /*Create a function that returns the reverse number of a given number.
 Example: input = 123 -> returns: 321*/
-const n=4563
+const prompt = require('prompt-sync')();
+const n=prompt('number: ')
 function reverse(f)
 {
     let m=0;
